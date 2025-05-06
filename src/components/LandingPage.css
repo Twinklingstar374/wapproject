@@ -3,6 +3,7 @@ html {
     background-color: black;
 }
 
+
 .landing{
     position: relative;
     height: 110vh;
@@ -49,9 +50,11 @@ html {
     position: fixed;
     width: 100%;
     padding: 20px 40px;
+    margin-left: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    z-index: 2000;
 }
 
 .logo {
@@ -208,15 +211,23 @@ html {
     justify-content: center;
     align-items: center;
     border: 1.5px solid #2f5d88;
-    width: 400px;
-    height: 350px;
+    width: 350px;
+    height: 300px;
     border-radius: 20px;
     box-shadow: 0 0 20px #2f5d88, 0 0 40px #2f5d88;
     padding: 50px;
     color: white;
     text-align: center;
     margin-left: 60px;
+}
+.todocontent {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
+.todocontent:hover {
+    transform: scale(1.05) rotateX(3deg);
+    box-shadow: 0 0 25px #2f5d88, 0 0 50px #2f5d88;
+    border-color: #4ea4f3;
 }
 
 
@@ -258,6 +269,7 @@ html {
     height: 80%;
     object-fit: cover;
     filter: brightness(0.8);
+    z-index: -5;
 }
 
 .second-video1::before,
@@ -266,17 +278,17 @@ html {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .second-video1::before {
-    top: 0;
+    
     height: 50%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 8.5) 100%);
 }
 
 .second-video1::after {
-    bottom: 0;
+   
     height: 50%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 8.5) 100%);
 }
@@ -290,7 +302,7 @@ html {
     text-align: center;
     padding: 2rem;
     max-width: 600px;
-    background: rgba(0, 0, 0, 0.5); 
+    /* background: rgba(0, 0, 0, 0.5);  */
     border-radius: 12px;
   }
 
@@ -324,11 +336,11 @@ html {
     height: 3px;
     width: 100%; 
     background: linear-gradient(to right, #1585e7 40%, transparent 60%);
-    animation: pulseUnderline 2s infinite ease-in-out;
+    animation: Underline 2s infinite ease-in-out;
     border-radius: 2px;
 }
   
-@keyframes pulseUnderline {
+@keyframes Underline {
     0%, 100% {
       width: 100%; 
     }

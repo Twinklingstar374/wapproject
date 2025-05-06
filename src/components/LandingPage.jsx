@@ -85,16 +85,16 @@ const LandingPage = () => {
           <p>Whether it's work projects, personal tasks, or study plans, TrackX helps you organize and confidently tackle everything in your life.</p>
         </div>
       </div>
-      <div className="myimage">
+      {/* <div className="myimage">
         <img src={todo} alt="imag" className="todo" />
-      </div>
+      </div> */}
     </div>
 
 
     <div className="spacer-section">
-    <div className="myimage">
+    {/* <div className="myimage">
         <img src={todo} alt="imag" className="todo" />
-      </div>
+      </div> */}
       <div className="todocontent">
         <div className="glow-box">
           <h2>Todo List</h2>
@@ -104,15 +104,26 @@ const LandingPage = () => {
       </div>
     </div>
 
+    <section className="second-video1">
+  <video autoPlay loop muted className="second-video">
+    <source src={SecondVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-      
-      <section className="second-video1">
-        <video autoPlay loop muted className="second-video">
-          <source src={SecondVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
 
-      </section>
+  <div className="about-overlay">
+    <h1 className="underline">About TrackX</h1>
+    <p>
+    TrackX is your all-in-one productivity companion, crafted to simplify your daily life. Whether you're managing tasks, building habits, journaling thoughts, or organizing events — TrackX brings it all together in a single sleek dashboard.
+    Designed for the modern mind, it combines functionality with minimal design to help you focus, reflect, and grow every day.
+    </p>
+  </div>
+
+
+</section>
+
+
+
 
 
 

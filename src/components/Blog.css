@@ -60,6 +60,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.story-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
 
 .story:hover {
     transform: translateY(-10px);

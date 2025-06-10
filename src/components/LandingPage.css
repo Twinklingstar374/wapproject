@@ -317,7 +317,7 @@ html {
     line-height: 30px;
     letter-spacing: 2px;
     color:rgb(196, 208, 216);
-    margin-top: 100px;
+    margin-top: 0px;
   }
  
   .underline {
@@ -348,3 +348,117 @@ html {
       width: 120%; 
 }
 }
+.acc {
+    margin-top: 300px;
+}
+
+
+
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 40px;
+  }
+  
+  .footer-section {
+    flex: 1 1 220px;
+    min-width: 200px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #2a89dc;
+    font-weight: 700;
+  }
+  
+  .footer-section p, .footer-section a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #4ea4f3;
+    text-shadow: 0 0 8px #4ea4f3;
+  }
+  
+  .social-links a {
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #2a89dc;
+    text-shadow: 0 0 10px #2a89dc;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(42, 137, 220, 0.3);
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+    user-select: none;
+  }
+  .newsletter p {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 10px;
+    max-width: 320px;
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1.5px solid #2a89dc;
+    background-color: transparent;
+    color: #eaeaea;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .newsletter-input:focus {
+    border-color: #4ea4f3;
+    box-shadow: 0 0 8px #4ea4f3;
+  }
+  
+  .newsletter-button {
+    background-color:transparent;
+    border: 1.5px solid #294d6d;;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 0 20px hsl(207, 36%, 51%), 0 0 20px #2a89dc;
+
+  }
+  
+  .newsletter-button:hover {
+    background-color: #4ea4f3;
+    box-shadow: 0 0 12px #4ea4f3;
+  }
+  

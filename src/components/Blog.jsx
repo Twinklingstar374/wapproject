@@ -10,6 +10,7 @@ const Blog = () => {
         
         <div className="story">
           <h3>Meet Priya!</h3>
+          <img src="/assets/priya.jpg" alt="Priya" className="story-photo" />
           <p>"TrackX helped me organize my daily tasks and manage my time effectively. With the Todo List and Calendar features, I’ve been able to prioritize better and feel less overwhelmed at the end of the day."</p>
         </div>
         
